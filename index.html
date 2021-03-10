@@ -102,7 +102,7 @@
     <div class="container">
         
         <div class="question">
-            <span  id = "question1">what is 12 X 12</span>
+            <span  id = "question1">Q1: what is 12 X 12</span>
         </div>
         <div class="buttons">
 
@@ -116,107 +116,103 @@
     <script>
         var currentquestion = 1;
         var score = 0;
+        var btn1 = document.getElementById("btn-1");
+        var btn2 = document.getElementById("btn-2");
+        var btn3 = document.getElementById("btn-3");
+        var btn4 = document.getElementById("btn-4");
+        var question = document.getElementById("question1");
         check1 = ()=> {
-            var btn1 = document.getElementById("btn-1");
-            var btn2 = document.getElementById("btn-2");
-            var btn3 = document.getElementById("btn-3");
-            var btn4 = document.getElementById("btn-4");
-            var btn11 = document.getElementById("btn-1").textContent;
-            var btn21 = document.getElementById("btn-2").textContent;
-            var btn31 = document.getElementById("btn-3").textContent;
-            var btn41 = document.getElementById("btn-4").textContent;
-            var question = document.getElementById("question1");
             if(currentquestion == 1){
-                if(btn11 == "144"){
+                if(btn1.textContent == "144"){
                     score+= 2;
                 }  
                 btn1.innerHTML = "3";
                 btn2.innerHTML = "23";
                 btn3.innerHTML = "2X3";
                 btn4.innerHTML = "6";
-                question.innerHTML = "what is 2X3";
+                question.innerHTML = "Q2: what is 2X3";
             }if(currentquestion ==2){
-                if(btn11 == "6"){
+                if(btn1.textContent == "6"){
                     score+= 2;
                 }
                 btn1.innerHTML = "5";
                 btn2.innerHTML = "3";
                 btn3.innerHTML = "7";
                 btn4.innerHTML = "12";
-                question.innerHTML = "how many chakras are there in the body";
+                question.innerHTML = "Q3: how many chakras are there in the body";
             }
             if(currentquestion ==3){
-                if(btn11 == "7"){
+                if(btn1.textcontent == "7"){
                     score+=2;
                 }
                 btn1.innerHTML = "5";
                 btn2.innerHTML = "306";
                 btn3.innerHTML = "206";
                 btn4.innerHTML = "10244444";
-                question.innerHTML = "how many bones does a human body have";
+                question.innerHTML = "Q4: how many bones does a human body have";
             }if(currentquestion ==4){
-                if(btn11 == "206"){
+                if(btn1.textcontent == "206"){
                     score+= 2;
                 }
                 btn1.innerHTML = "wings";
                 btn2.innerHTML = "lord of the rings";
                 btn3.innerHTML = "parasite";
                 btn4.innerHTML = "shape of water";
-                question.innerHTML = "first movie to win an oscar";
+                question.innerHTML = "Q5: first movie to win an oscar";
             }
             if(currentquestion ==5){
-                if(btn11 == "wings"){
+                if(btn1.textContent == "wings"){
                     score+= 2;
                 }
                 btn1.innerHTML = "23000";
                 btn2.innerHTML = "72000";
                 btn3.innerHTML = "34000";
                 btn4.innerHTML = "20000";
-                question.innerHTML = "how many nadis are there in human body";
+                question.innerHTML = "Q6: how many nadis are there in human body";
             }
             if(currentquestion ==6){
-                if(btn11 == "72000"){
+                if(btn1.textContent == "72000"){
                     score+= 2;
                 }
                 btn1.innerHTML = "shahjahan";
                 btn2.innerHTML = "akbar";
                 btn3.innerHTML = "parasite";
                 btn4.innerHTML = "Elon musk";
-                question.innerHTML = "who built tajmahal";
+                question.innerHTML = "Q7: who built tajmahal";
             }
             if(currentquestion ==7){
-                if(btn11 == "shahjahan"){
+                if(btn1.textContent == "shahjahan"){
                     score+= 2;
                 }
                 btn1.innerHTML = "114";
                 btn2.innerHTML = "117";
                 btn3.innerHTML = "123";
                 btn4.innerHTML = "119";
-                question.innerHTML = "what is 13X9";
+                question.innerHTML = "Q8: what is 13X9";
             }
             if(currentquestion ==8){
-                if(btn11 == "117"){
+                if(btn1.textContent == "117"){
                     score+= 2;
                 }
                 btn1.innerHTML = "medicine";
                 btn2.innerHTML = "social life";
                 btn3.innerHTML = "philosphy";
                 btn4.innerHTML = "politics";
-                question.innerHTML = "upnishads are books on";
+                question.innerHTML = "Q9: upnishads are books on";
             }
             if(currentquestion ==9){
-                if(btn11 == "philosphy"){
+                if(btn1.textContent == "philosphy"){
                     score+= 2;
                 }
                 btn1.innerHTML = "12";
                 btn2.innerHTML = "14";
                 btn3.innerHTML = "86";
                 btn4.innerHTML = "84";
-                question.innerHTML = "lcm of 12,14";
+                question.innerHTML = "Q10: lcm of 12,14";
             }
             
             if(currentquestion ==10){
-                if(btn11 == "84"){
+                if(btn1.textContent == "84"){
                     score+= 2;
                 }
                 question.innerHTML = `you scored ${score} and correct were ${score/2}`;
@@ -230,106 +226,97 @@
             
         }
         check2 = ()=> {
-            var btn1 = document.getElementById("btn-1");
-            var btn2 = document.getElementById("btn-2");
-            var btn3 = document.getElementById("btn-3");
-            var btn4 = document.getElementById("btn-4");
-            var btn11 = document.getElementById("btn-1").textContent;
-            var btn21 = document.getElementById("btn-2").textContent;
-            var btn31 = document.getElementById("btn-3").textContent;
-            var btn41 = document.getElementById("btn-4").textContent;
-            var question = document.getElementById("question1");
             if(currentquestion == 1){
-                if(btn21 == "144"){
+                if(btn2.textContent == "144"){
                     score+= 2;
                 }  
                 btn1.innerHTML = "3";
                 btn2.innerHTML = "23";
                 btn3.innerHTML = "2X3";
                 btn4.innerHTML = "6";
-                question.innerHTML = "what is 2X3";
+                question.innerHTML = "Q2: what is 2X3";
             }if(currentquestion ==2){
-                if(btn21 == "6"){
+                if(btn2.textContent == "6"){
                     score+= 2;
                 }
                 btn1.innerHTML = "5";
                 btn2.innerHTML = "3";
                 btn3.innerHTML = "7";
                 btn4.innerHTML = "12";
-                question.innerHTML = "how many chakras are there in the body";
+                question.innerHTML = "Q3: how many chakras are there in the body";
             }
             if(currentquestion ==3){
-                if(btn21 == "7"){
+                if(btn2.textContent == "7"){
                     score+=2;
                 }
                 btn1.innerHTML = "5";
                 btn2.innerHTML = "306";
                 btn3.innerHTML = "206";
                 btn4.innerHTML = "10244444";
-                question.innerHTML = "how many bones does a human body have";
+                question.innerHTML = "Q4: how many bones does a human body have";
             }if(currentquestion ==4){
-                if(btn21 == "206"){
+                if(btn2.textContent == "206"){
                     score+= 2;
                 }
                 btn1.innerHTML = "wings";
                 btn2.innerHTML = "lord of the rings";
                 btn3.innerHTML = "parasite";
                 btn4.innerHTML = "shape of water";
-                question.innerHTML = "first movie to win an oscar";
+                question.innerHTML = "Q5: first movie to win an oscar";
             }
             if(currentquestion ==5){
-                if(btn21 == "wings"){
+                if(btn2.textContent == "wings"){
                     score+= 2;
                 }
                 btn1.innerHTML = "23000";
                 btn2.innerHTML = "72000";
                 btn3.innerHTML = "34000";
                 btn4.innerHTML = "20000";
-                question.innerHTML = "how many nadis are there in human body";
+                question.innerHTML = "Q6: how many nadis are there in human body";
             }
             if(currentquestion ==6){
-                if(btn21 == "72000"){
+                if(btn2.textContent == "72000"){
                     score+= 2;
                 }
                 btn1.innerHTML = "shahjahan";
                 btn2.innerHTML = "akbar";
                 btn3.innerHTML = "parasite";
                 btn4.innerHTML = "Elon musk";
-                question.innerHTML = "who built tajmahal";
+                question.innerHTML = "Q7: who built tajmahal";
             }
             if(currentquestion ==7){
-                if(btn21 == "shahjahan"){
+                if(btn2.textContent == "shahjahan"){
                     score+= 2;
                 }
                 btn1.innerHTML = "114";
                 btn2.innerHTML = "117";
                 btn3.innerHTML = "123";
                 btn4.innerHTML = "119";
-                question.innerHTML = "what is 13X9";
+                question.innerHTML = "Q8: what is 13X9";
             }
             if(currentquestion ==8){
-                if(btn21 == "117"){
+                if(btn2.textContent == "117"){
                     score+= 2;
                 }
                 btn1.innerHTML = "medicine";
                 btn2.innerHTML = "social life";
                 btn3.innerHTML = "philosphy";
                 btn4.innerHTML = "politics";
-                question.innerHTML = "upnishads are books on";
+                question.innerHTML = "Q9: upnishads are books on";
             }
             if(currentquestion ==9){
-                if(btn21 == "philosphy"){
+                if(btn2.textContent == "philosphy"){
                     score+= 2;
                 }
                 btn1.innerHTML = "12";
                 btn2.innerHTML = "14";
                 btn3.innerHTML = "86";
                 btn4.innerHTML = "84";
-                question.innerHTML = "lcm of 12,14";
+                question.innerHTML = "Q10: lcm of 12,14";
             }
             
             if(currentquestion ==10){
-                if(btn21 == "84"){
+                if(btn2.textContent == "84"){
                     score+= 2;
                 }
                 question.innerHTML = `you scored ${score} and correct were ${score/2}`;
@@ -343,106 +330,97 @@
             
         }
         check3 = ()=> {
-            var btn1 = document.getElementById("btn-1");
-            var btn2 = document.getElementById("btn-2");
-            var btn3 = document.getElementById("btn-3");
-            var btn4 = document.getElementById("btn-4");
-            var btn11 = document.getElementById("btn-1").textContent;
-            var btn21 = document.getElementById("btn-2").textContent;
-            var btn31 = document.getElementById("btn-3").textContent;
-            var btn41 = document.getElementById("btn-4").textContent;
-            var question = document.getElementById("question1");
             if(currentquestion == 1){
-                if(btn31 == "144"){
+                if(btn3.textContent == "144"){
                     score+= 2;
                 }  
                 btn1.innerHTML = "3";
                 btn2.innerHTML = "23";
                 btn3.innerHTML = "2X3";
                 btn4.innerHTML = "6";
-                question.innerHTML = "what is 2X3";
+                question.innerHTML = "Q2: what is 2X3";
             }if(currentquestion ==2){
-                if(btn31 == "6"){
+                if(btn3.textContent == "6"){
                     score+= 2;
                 }
                 btn1.innerHTML = "5";
                 btn2.innerHTML = "3";
                 btn3.innerHTML = "7";
                 btn4.innerHTML = "12";
-                question.innerHTML = "how many chakras are there in the body";
+                question.innerHTML = "Q3: how many chakras are there in the body";
             }
             if(currentquestion ==3){
-                if(btn31 == "7"){
+                if(btn3.textContent == "7"){
                     score+=2;
                 }
                 btn1.innerHTML = "5";
                 btn2.innerHTML = "306";
                 btn3.innerHTML = "206";
                 btn4.innerHTML = "10244444";
-                question.innerHTML = "how many bones does a human body have";
+                question.innerHTML = "Q4: how many bones does a human body have";
             }if(currentquestion ==4){
-                if(btn31 == "206"){
+                if(btn3.textContent == "206"){
                     score+= 2;
                 }
                 btn1.innerHTML = "wings";
                 btn2.innerHTML = "lord of the rings";
                 btn3.innerHTML = "parasite";
                 btn4.innerHTML = "shape of water";
-                question.innerHTML = "first movie to win an oscar";
+                question.innerHTML = "Q5: first movie to win an oscar";
             }
             if(currentquestion ==5){
-                if(btn31 == "wings"){
+                if(btn3.textContent == "wings"){
                     score+= 2;
                 }
                 btn1.innerHTML = "23000";
                 btn2.innerHTML = "72000";
                 btn3.innerHTML = "34000";
                 btn4.innerHTML = "20000";
-                question.innerHTML = "how many nadis are there in human body";
+                question.innerHTML = "Q6: how many nadis are there in human body";
             }
             if(currentquestion ==6){
-                if(btn31 == "72000"){
+                if(btn3.textContent == "72000"){
                     score+= 2;
                 }
                 btn1.innerHTML = "shahjahan";
                 btn2.innerHTML = "akbar";
                 btn3.innerHTML = "parasite";
                 btn4.innerHTML = "Elon musk";
-                question.innerHTML = "who built tajmahal";
+                question.innerHTML = "Q7: who built tajmahal";
             }
             if(currentquestion ==7){
-                if(btn31 == "shahjahan"){
+                if(btn3.textContent == "shahjahan"){
                     score+= 2;
                 }
                 btn1.innerHTML = "114";
                 btn2.innerHTML = "117";
                 btn3.innerHTML = "123";
                 btn4.innerHTML = "119";
-                question.innerHTML = "what is 13X9";
+                question.innerHTML = "Q8: what is 13X9";
             }
             if(currentquestion ==8){
-                if(btn31 == "117"){
+                if(btn3.textContent == "117"){
                     score+= 2;
                 }
                 btn1.innerHTML = "medicine";
                 btn2.innerHTML = "social life";
                 btn3.innerHTML = "philosphy";
                 btn4.innerHTML = "politics";
-                question.innerHTML = "upnishads are books on";
+                question.innerHTML = "Q9: upnishads are books on";
             }
             if(currentquestion ==9){
-                if(btn31 == "philosphy"){
+                if(btn3.textContent == "philosphy"){
                     score+= 2;
                 }
                 btn1.innerHTML = "12";
                 btn2.innerHTML = "14";
                 btn3.innerHTML = "86";
                 btn4.innerHTML = "84";
-                question.innerHTML = "lcm of 12,14";
+                question.innerHTML = "Q10: lcm of 12,14";
             }
             
             if(currentquestion ==10){
-                if(btn31 == "84"){
+                if(btn3.textContent == "84"){
                     score+= 2;
                 }
                 question.innerHTML = `you scored ${score} and correct were ${score/2}`;
@@ -456,106 +434,97 @@
             
         }
         check4 = ()=> {
-            var btn1 = document.getElementById("btn-1");
-            var btn2 = document.getElementById("btn-2");
-            var btn3 = document.getElementById("btn-3");
-            var btn4 = document.getElementById("btn-4");
-            var btn11 = document.getElementById("btn-1").textContent;
-            var btn21 = document.getElementById("btn-2").textContent;
-            var btn31 = document.getElementById("btn-3").textContent;
-            var btn41 = document.getElementById("btn-4").textContent;
-            var question = document.getElementById("question1");
             if(currentquestion == 1){
-                if(btn41 == "144"){
+                if(btn4.textContent == "144"){
                     score+= 2;
                 }  
                 btn1.innerHTML = "3";
                 btn2.innerHTML = "23";
                 btn3.innerHTML = "2X3";
                 btn4.innerHTML = "6";
-                question.innerHTML = "what is 2X3";
+                question.innerHTML = "Q2: what is 2X3";
             }if(currentquestion ==2){
-                if(btn41 == "6"){
+                if(btn4.textContent == "6"){
                     score+= 2;
                 }
                 btn1.innerHTML = "5";
                 btn2.innerHTML = "3";
                 btn3.innerHTML = "7";
                 btn4.innerHTML = "12";
-                question.innerHTML = "how many chakras are there in the body";
+                question.innerHTML = "Q3: how many chakras are there in the body";
             }
             if(currentquestion ==3){
-                if(btn41 == "7"){
+                if(btn4.textContent == "7"){
                     score+=2;
                 }
                 btn1.innerHTML = "5";
                 btn2.innerHTML = "306";
                 btn3.innerHTML = "206";
                 btn4.innerHTML = "10244444";
-                question.innerHTML = "how many bones does a human body have";
+                question.innerHTML = "Q4: how many bones does a human body have";
             }if(currentquestion ==4){
-                if(btn41 == "206"){
+                if(btn4.textContent == "206"){
                     score+= 2;
                 }
                 btn1.innerHTML = "wings";
                 btn2.innerHTML = "lord of the rings";
                 btn3.innerHTML = "parasite";
                 btn4.innerHTML = "shape of water";
-                question.innerHTML = "first movie to win an oscar";
+                question.innerHTML = "Q5: first movie to win an oscar";
             }
             if(currentquestion ==5){
-                if(btn41 == "wings"){
+                if(btn4.textContent == "wings"){
                     score+= 2;
                 }
                 btn1.innerHTML = "23000";
                 btn2.innerHTML = "72000";
                 btn3.innerHTML = "34000";
                 btn4.innerHTML = "20000";
-                question.innerHTML = "how many nadis are there in human body";
+                question.innerHTML = "Q6: how many nadis are there in human body";
             }
             if(currentquestion ==6){
-                if(btn41 == "72000"){
+                if(btn4.textContent == "72000"){
                     score+= 2;
                 }
                 btn1.innerHTML = "shahjahan";
                 btn2.innerHTML = "akbar";
                 btn3.innerHTML = "parasite";
                 btn4.innerHTML = "Elon musk";
-                question.innerHTML = "who built tajmahal";
+                question.innerHTML = "Q7: who built tajmahal";
             }
             if(currentquestion ==7){
-                if(btn41 == "shahjahan"){
+                if(btn4.textContent == "shahjahan"){
                     score+= 2;
                 }
                 btn1.innerHTML = "114";
                 btn2.innerHTML = "117";
                 btn3.innerHTML = "123";
                 btn4.innerHTML = "119";
-                question.innerHTML = "what is 13X9";
+                question.innerHTML = "Q8: what is 13X9";
             }
             if(currentquestion ==8){
-                if(btn41 == "117"){
+                if(btn4.textContent == "117"){
                     score+= 2;
                 }
                 btn1.innerHTML = "medicine";
                 btn2.innerHTML = "social life";
                 btn3.innerHTML = "philosphy";
                 btn4.innerHTML = "politics";
-                question.innerHTML = "upnishads are books on";
+                question.innerHTML = "Q9: upnishads are books on";
             }
             if(currentquestion ==9){
-                if(btn41 == "philosphy"){
+                if(btn4.textContent == "philosphy"){
                     score+= 2;
                 }
                 btn1.innerHTML = "12";
                 btn2.innerHTML = "14";
                 btn3.innerHTML = "86";
                 btn4.innerHTML = "84";
-                question.innerHTML = "lcm of 12,14";
+                question.innerHTML = "Q10: lcm of 12,14";
             }
             
             if(currentquestion ==10){
-                if(btn41 == "84"){
+                if(btn4.textContent == "84"){
                     score+= 2;
                 }
                 question.innerHTML = `you scored ${score} and correct were ${score/2}`;
